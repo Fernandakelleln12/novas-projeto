@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar relatorio</title>
+    <link rel="stylesheet" href="relatorio.css">
+</head>
+<body>
+    <h1>Relatório</h1>
+    <form action="seu_script_de_envio.php" method="post">
+        <label for="de">De:</label >
+        <input type="email" id="de" name="de" required>
+
+        <label for="para">Para:</label>
+        <input type="email" id="para" name="para" required>
+
+        <label for="relatorio">Escrever Relatório:</label>
+        <textarea id="relatorio" name="relatorio" rows="10" required></textarea>
+
+        <input type="submit" value="Enviar Relatório">
+    </form>
+</body>
+</html>
