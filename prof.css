@@ -5,19 +5,6 @@ body {
     padding: 20px;
 }
 
-.navbar {
-    background-color: #333;
-    overflow: hidden;
-}
-
-.navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
 
 .main-content h1 {
     color:#988780;
@@ -30,25 +17,28 @@ body {
 .outros-botoes button {
     display: inline-block;
     margin: 10px;
-    padding: 10px;
+    padding: 40px;
     background-color: #e4cec8;
     color: #f1eceb;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     text-align: center;
+    width: 400px;
     
 }
 .aulas button{
-    display:table-footer-group;
-    margin: 10px;
-    padding: 10px;
+    display:inline;
+    margin: 40px;
+    padding: 40px;
     background-color: #e4cec8;
     color: #f1eceb;
-    border: none;
+    border: 100px;
     border-radius: 4px;
     cursor: pointer;
-    text-align:center;
+    text-align: center;
+    width: 500px;
+    float: center;
 }
 .aulas {
     margin-bottom: 20px; /* Adiciona espaço abaixo do botão Minhas Aulas */
@@ -61,7 +51,7 @@ body {
 
 
 .students-list {
-    background-color: #fff;
+    background-color: #dfd9d9;
     padding: 20px;
     margin-top: 20px;
 }
@@ -83,24 +73,35 @@ body {
 
 .students-list {
     float: right; /* Isso fará com que a lista flutue para o lado direito da tela */
-    width: 200px; /* Defina a largura desejada para a lista */
-    /* Outros estilos */
-}
-
-/* Se você estiver usando flexbox no container pai, poderia ser algo assim: */
-.container {
-    display: flex;
-    justify-content: space-between; /* Isso alinha os itens filhos nas extremidades do container */
+    width: 500px; /* Defina a largura desejada para a lista */
+    
 }
 
 
 .outros-botoes {
-    display: flex;
-    justify-content: flex-start; /* Isso alinha os itens filhos no início do container, ou seja, à esquerda */
-}
-.outros-botoes {
-    float: left; /* Isso fará com que a div flutue para o lado esquerdo */
+    float:none; /* Isso fará com que a div flutue para o lado esquerdo */
 }
 
+/* Centraliza os elementos horizontalmente */
+ .main-content {
+    display:flow-root;
+    justify-content: center;
+}
 
-
+/* Alinha os elementos verticalmente */
+.outros-botoes,
+.students-list {
+    margin-top: 20px;
+}
+.outros-botoes{
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .students-list{
+    position: relative right;
+    z-index: 2;
+  }
+ 
+  
+  
