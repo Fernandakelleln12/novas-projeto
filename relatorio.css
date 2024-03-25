@@ -1,7 +1,29 @@
-body {
-    font-family: open sans, open sans;
-    background-color: #f1f1f1;
+/* Propriedades que se aplicam a todos os elementos da página. */
+* {
+    /* Remove a margem externa de todos os lados do elemento. */
     margin: 0;
+    /* Remove o espaçamento interno de todos os lados do elemento. */
+    padding: 0;
+    /* Inclui o preenchimento e a borda na largura e altura. */
+    box-sizing: border-box;
+}
+
+body {
+    /* Exibição flexível. */
+    /* Torna o elemento um flex container */
+    /* e os seus elementos internos em flex-itens. */
+    display: flex;
+    /* Quebra de linha quando os itens não couberem na largura da tela. */
+    flex-wrap: wrap;
+    /* Junção de flex-grow, flex-shrink e flex-basis. */
+    /* flex-grow – Habilidade de um flex item crescer. */
+    /* flex-shrink - Capacidade de redução do item. */
+    /* flex-basis – Tamanho inicial do item. */
+    flex: 1 1 100vw;
+    /* Margem de todos os lados. */
+    margin: 3px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #f1f1f1;
     padding: 20px;
 }
 
@@ -10,20 +32,18 @@ h1 {
     text-align: center;
 }
 
-form {
-    background-color:#ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    max-width: 400px;
-    margin: 20px auto;
-}
-
 label {
     display: block;
     margin-bottom: 10px;
     color: #f2d9d9;
-    
-    
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 20px auto;
 }
 
 input[type="email"],

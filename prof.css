@@ -3,6 +3,9 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
+   
+   
+
 }
 
 
@@ -39,6 +42,7 @@ body {
     text-align: center;
     width: 500px;
     float: center;
+    
 }
 .aulas {
     margin-bottom: 20px; /* Adiciona espaço abaixo do botão Minhas Aulas */
